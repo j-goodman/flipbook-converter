@@ -3,6 +3,8 @@ let receiveFiles = () => {
     let convertButton = document.getElementById('multi-image-convert')
     let fileSource = document.querySelector('input[type=file]')
     let images = []
+    
+    preview.innerHTML = ''
 
     Array.from(fileSource.files).map(file => {
         let previewImage = document.createElement('img')
