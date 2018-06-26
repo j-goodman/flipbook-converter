@@ -10,11 +10,16 @@
     <body>
         <h1>Flipbook file manager.</h1>
         <h2>Convert images to filmstrip.</h2>
+        <h2 id='error-report'></h2>
         <section id='multi-image-upload'>
             <input type='file' name='img' multiple>
             <input type='submit' id='multi-image-submit'>
         </section>
         <h3>Preview:</h3>
         <section id='preview-section'></section>
+        <input type='submit' value='Convert' id='multi-image-convert'>
+        <h3>Output:</h3>
+        <canvas id='output-canvas'></canvas>
+        <h3 id='download-info'></h3>
     </body>
 </html>
