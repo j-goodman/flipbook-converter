@@ -21,3 +21,38 @@ canvas {
     height: auto;
     max-width: 100%;
 }
+
+.image-controls {
+    display: flex;
+    flex-direction: row;
+}
+
+#start-frame-button, #end-frame-button, #draw-button {
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+    padding: 12px;
+}
+
+#start-frame-button:hover, #end-frame-button:hover, #draw-button:hover {
+    opacity: .75;
+}
+
+#start-frame-button {
+    background: #530;
+}
+
+#end-frame-button {
+    background: #035;
+}
+
+#draw-button {
+    background: #080;
+}
+
+.hidden {
+    display: none;
+}

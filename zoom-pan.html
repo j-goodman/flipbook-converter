@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+    <head>
+        <meta charset='utf-8'>
+        <title>Zoom and pan</title>
+        <script src='lib/zoom-pan.js'></script>
+        <script src='lib/smoothMove.js'></script>
+        <link rel='stylesheet' href='style.css'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inconsolata'>
+    </head>
+    <body>
+        <canvas id='canvas'></canvas>
+        <section id='multi-image-upload'>
+            <input type='file' name='img'>
+            <input type='submit' value='Submit Image' id='image-submit'>
+        </section>
+        <section class='image-controls hidden'>
+            <div id='start-frame-button'>Select Start Frame</div>
+            <div id='end-frame-button'>Select End Frame</div>
+            <div id='draw-button'>Animate</div>
+        </section>
+        <section id='startframe-list'></section>
+        <section id='endframe-list'></section>
+    </body>
+</html>
